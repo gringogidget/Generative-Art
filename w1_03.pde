@@ -17,10 +17,10 @@ int targetCount;
 // setup function
 void setup() {
   size(500, 500);
-  background(255);
+  background(255,192,203);
 
   delayCount = 0;
-  targetCount = (int) random(5, 50); // set target count to a random integer between 10 and 50
+  targetCount = (int) random(1, 50); // set target count to a random integer between 10 and 50
 }
 
 // draw function
@@ -45,8 +45,8 @@ void draw() {
 
   if (mousePressed) {
 
-    stroke(0); 
-    fill(0);
+    stroke(255,105,180);
+    fill(255,240,245);
 
     // switch statement
     switch(style) {
@@ -57,19 +57,19 @@ void draw() {
 
     case 1:
       // draw a circle with random radius
-      float esize = random(1, 20);
+      float esize = random(1, 50);
       ellipse(mouseX, mouseY, esize, esize);
       break;
 
     case 2:
       // draw a random sized rectangle
-      float qsize = random(1, 10);
+      float qsize = random(1, 50);
       quad(mouseX-qsize, mouseY, mouseX, mouseY-qsize, mouseX+qsize, mouseY, mouseX, mouseY+qsize   );
       break;
 
     case 3:
       // draw a triangle with random size
-      float tsize = random(1, 5);
+      float tsize = random(1, 50);
       triangle(mouseX-tsize, mouseY+tsize, mouseX, mouseY-tsize, mouseX+tsize, mouseY+tsize); 
       break;
     } // end of switch statement
@@ -86,4 +86,3 @@ void draw() {
     background(255);
   }
 }
-
