@@ -15,7 +15,7 @@
 void setup() {
 
   // set the display window to size 500 x 500 pixels
-  size(500, 500);
+  size(800, 8r00);
 
   // set the background colour to white
   background(255);
