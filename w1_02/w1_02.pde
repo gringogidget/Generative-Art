@@ -1,4 +1,4 @@
-/*
+r/*
  * Creative Coding
  * Week 1, 02 - Draw your name! (part 2)
  * by Indae Hwang and Jon McCormack
@@ -16,7 +16,7 @@ float inc;
 
 void setup() {
   size(500, 500);
-  background(0);
+  background(50);
 
   rectMode(CENTER);  // rectangles drawn from the centre
 
@@ -47,7 +47,7 @@ void draw() {
     line(mouseX, mouseY, pmouseX, pmouseY); // pmouse is the mouse position at the previous frame
 
     // oscillate the radius over time
-    float radius = 30 * abs( sin(frameCount) );
+    float radius = 200 * abs( sin(frameCount) );
 
     float first_tempX  = mouseX + radius * cos( angle);
     float first_tempY  = mouseY + radius * sin( angle);
