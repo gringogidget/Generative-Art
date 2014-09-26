@@ -1,4 +1,3 @@
-
 float angle;
 float jitter;
 
